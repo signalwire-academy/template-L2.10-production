@@ -1,0 +1,52 @@
+# Grading configuration for Lab 2.10: Production Deployment
+
+assignment:
+  id: L2.10-production
+  name: "Lab 2.10: Production Deployment"
+  level: 2
+  type: lab
+  passing_score: 70
+
+checks:
+  - id: instantiate
+    name: "Agent Instantiation"
+    points: 15
+    type: instantiate
+    file: solution/agent.py
+  - id: swml_valid
+    name: "SWML Generation"
+    points: 15
+    type: swml_valid
+    file: solution/agent.py
+  - id: func_status
+    name: "get_status function"
+    points: 20
+    type: function_exists
+    file: solution/agent.py
+    function: get_status
+  - id: func_time
+    name: "get_time function"
+    points: 15
+    type: function_exists
+    file: solution/agent.py
+    function: get_time
+  - id: func_help
+    name: "get_help function"
+    points: 15
+    type: function_exists
+    file: solution/agent.py
+    function: get_help
+  - id: has_env
+    name: "Environment Config"
+    points: 20
+    type: swml_contains
+    file: solution/agent.py
+    require:
+      - text: "production"
+
+feedback:
+  pass: |
+    Excellent work! You've completed Lab 2.10: Production Deployment.
+
+  fail: |
+    Some checks didn't pass. Review the requirements and try again.
