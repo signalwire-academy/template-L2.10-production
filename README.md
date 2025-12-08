@@ -59,4 +59,10 @@ git push
 
 ---
 
+## Next Assignment
+
+Ready to continue? [**Start Lab 2.11: Serverless Deployment**](https://classroom.github.com/a/fWdRTsEV)
+
+---
+
 *SignalWire AI Agents Certification*
